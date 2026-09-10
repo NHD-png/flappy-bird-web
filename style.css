@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.game-wrapper {
+    position: relative;
+    display: inline-block;
+    border: 4px solid #ffd700;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#gameCanvas {
+    display: block;
+    background: linear-gradient(#4ec0ca, #70c5ce);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+.overlay h2 {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.overlay p {
+    font-size: 1.1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #ffd700;
+    color: #1a1a2e;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #ffed4a;
+    transform: scale(1.05);
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.controls p {
+    font-size: 1.3rem;
+}
+
+#downloadScoreBtn {
+    background: #4caf50;
+    color: white;
+}
+
+#downloadScoreBtn:hover {
+    background: #66bb6a;
+}
+
+#clearScoreBtn {
+    background: #e74c3c;
+    color: white;
+    font-size: 0.95rem;
+    padding: 8px 20px;
+}
+
+#clearScoreBtn:hover {
+    background: #ff6b5a;
+}
+
+.score-list {
+    margin-top: 25px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+.score-list h3 {
+    margin-bottom: 10px;
+    color: #ffd700;
+    text-align: center;
+}
+
+#scoreHistory {
+    list-style: none;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+#scoreHistory li {
+    padding: 6px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.95rem;
+}
+
+#scoreHistory li:last-child {
+    border-bottom: none;
+}

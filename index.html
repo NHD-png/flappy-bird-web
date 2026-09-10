@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flappy Bird</h1>
+        
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="600"></canvas>
+            
+            <div id="startScreen" class="overlay">
+                <h2>Flappy Bird</h2>
+                <p>Nhấn <b>Space</b> hoặc click để bay</p>
+                <button id="startBtn">Bắt đầu chơi</button>
+            </div>
+            
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>Game Over!</h2>
+                <p>Điểm của bạn: <span id="finalScore">0</span></p>
+                <p>Điểm cao nhất: <span id="bestScore">0</span></p>
+                <button id="restartBtn">Chơi lại</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <p>Điểm hiện tại: <span id="currentScore">0</span></p>
+            <button id="downloadScoreBtn">Tải Score.txt</button>
+            <button id="clearScoreBtn">Xóa lịch sử điểm</button>
+        </div>
+        
+        <div class="score-list">
+            <h3>Lịch sử điểm gần đây</h3>
+            <ul id="scoreHistory"></ul>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
