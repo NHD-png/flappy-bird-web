@@ -18,5 +18,5 @@ HTML
 CSS
 JavaScript
 
-Purpose: A small personal project focused on practicing JavaScript, game logic, and interactive web development.
+Purpose: A small personal project focused on practicing JavaScript, game logic and interactive web development.
 Note: This is a simple personal project, so the visual design is intentionally minimal.
